@@ -8,3 +8,4 @@ router.post('/upload',upload.single('file'),uploadFile)
 router.get('/file/:fileId',downloadImage);
 
 export default router
+// https://file-sharing-app-1xes.onrender.com/file/65fb163e180f8afb6dc8e384
