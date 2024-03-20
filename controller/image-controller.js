@@ -8,7 +8,7 @@ export const uploadFile=async (req,res)=>{
     console.log(fileObj)
     try {
          const file=await  fileModel.create(fileObj)
-         res.status(200).json({path: `http://localhost:8000/file/${file._id}`})
+         res.status(200).json({path: `https://file-sharing-app-1xes.onrender.com/file/${file._id}`})
     } catch (error) {
         res.status(500).json("error while uploading")
     }
