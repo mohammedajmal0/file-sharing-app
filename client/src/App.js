@@ -34,7 +34,7 @@ function App() {
         <h1>File Sharing!</h1>
         <p>upload and share your files easily</p>
         <button onClick={()=>onUpoadClick()} disabled={loading}>upload</button>
-        // {loading && <p> Uploading...</p> } 
+        
         <input type='file' ref={fileInputRef} style={{display:'none'}} onChange={(e)=>{
           setFile(e.target.files[0])
         }}>
